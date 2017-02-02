@@ -4,12 +4,24 @@ body {
   background-color: #1d5ea6;
 }
 
+.note-app-0 {
+  background-color: #1d5eb5;
+}
+
 .na-login-0 {
   background-color: #1d5ea6;
+  z-index: 1000;
 }
 
 .na-toolbar-0 {
   background-color: #1d5ea6;
   margin-bottom: 10px;
   padding: 6px 8px 5px;
+}
+
+.paper-fab-0 {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  z-index: 100;
 }

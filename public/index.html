@@ -13,12 +13,12 @@
 
    <!-- Mobile Safari -->
    <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="apple-mobile-web-app-status-bar-style" content="#9C27B0">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#1d5ea6">
    <meta name="apple-mobile-web-app-title" content="Notes Reminder">
    <link rel="apple-touch-icon" href="app/bower_components/note-app-elements/images/icon-square-3x.png">
 
    <!-- Windows -->
-   <meta name="msapplication-TileColor" content="#9C27B0">
+   <meta name="msapplication-TileColor" content="#1d5ea6">
    <meta name="msapplication-TileImage" content="app/bower_components/note-app-elements/images/icon-inverted-3x.png">
 
 
@@ -55,11 +55,17 @@
         default-cache-strategy="networkFirst">
       </platinum-sw-cache>
     </platinum-sw-register>
-    <firebase-app
+    <!-- firebase-app
       name="notes"
       api-key="YOUR_API_KEY"
       auth-domain="YOUR_AUTH_DOMAIN"
       database-url="YOUR_DB_URL">
+    </firebase-app -->
+    <firebase-app
+          name="notes"
+          api-key="AIzaSyBvnlkPeAJQuaKnO7Ma7sLJMHmPOSU2Rl8"
+          auth-domain="polymer-demo-app.firebaseapp.com"
+          database-url="https://polymer-demo-app.firebaseio.com">
     </firebase-app>
     <!-- Adding Service Worker -->
 

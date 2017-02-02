@@ -40,6 +40,7 @@
    </app-indexeddb-mirror>
 
     <paper-fab
+      id="fab1"
       icon="add"
       on-tap="create"
       disabled="[[!online]]"
@@ -50,7 +51,6 @@
       id="editor"
       note="{{editableNote}}"
       on-close="commitChange">
-
     </na-editor>
 
     <firebase-document
@@ -89,13 +89,22 @@
 
       signIn: function() {
         this.$.auth.signInWithPopup();
+        console.log(this);
       },
       get notesPath() {
         return '/notes/' + this.user.uid;
       },
       toEditableId: function(noteId) {
         return this.notesPath + '/' + noteId;
+      },
+      loggedAccountCheck : function() {
+
       }
     });
+
+  </script>
+  <script>
+  var paperFabButton = document.getElementById('fab1');
+  console.log('eccolo', paperFabButton);
   </script>
 </dom-module>
